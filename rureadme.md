@@ -1,4 +1,4 @@
-<a href="">Оригинал</a>
+<a href="https://github.com/lordofsunshine/discordbotsite/blob/main/README.md">Оригинал</a>
 
 # Сайт для бота Discord
 

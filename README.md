@@ -1,4 +1,4 @@
-<a href="">Русский</a>
+<a href="https://github.com/lordofsunshine/discordbotsite/blob/main/rureadme.md">Русский</a>
 
 # Website for Discord Bot
 

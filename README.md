@@ -13,7 +13,7 @@ Remember that Discord bot website I created three years ago? The one that someho
 
 ### Why the Redesign?
 
-Picture this: I'm scrolling through my GitHub profile, basking in the glow of my incredible projects, when suddenly, I spot it. The Akemi bot website, sitting there like that embarrassing photo from your high school yearbook. You know, the one with the questionable haircut and the "I'm too cool for school" attitude?
+Picture this: I'm scrolling through my GitHub profile, basking in the glow of my incredible projects, when suddenly, I spot it. The  Advertisting Bot website, sitting there like that embarrassing photo from your high school yearbook. You know, the one with the questionable haircut and the "I'm too cool for school" attitude?
 
 I couldn't let it sit there, gathering digital dust and judging me with its outdated UI. So, I did what any self-respecting developer would do: I put on my redesign pants (yes, they're a thing) and got to work!
 

@@ -1,127 +1,346 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="GMT+3">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-    <title>Adversting Bot - Дискорд Бот</title>
-    
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./metatags.html">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-  </head>  
-  <body>
-      <ul class="navbar">
-        <li class="nav-item"><a href="/" >Домой</a></li>
-        
-        <li class="nav-item"><a href="https://discord.com/users/860335858196807730" >Связь</a></li>
-        
-      </ul>
-    
-    <header class="hero-section">
-      
-      <h1 class="hero-title">Adversting Bot</h1>
-    
-      <p class="hero-description">
-        Дискорд Бот, который продвигает ваш сервер и даёт Вам участников!
-      </p>
-      <button class="hero-btn">
-        Пригласить на Сервер
-      </button>
-    </header>
-    
-    <div class="time-load-section">
-      <div class="container">
-        <h1>
-          Пользователи в восторге, от этого :
-      </h1>
-      <p>
-        Большинство пользователей, так считают!
-      </p>
-        
-      <div class="row">
-      <div class="card">
-        <h1 class="card-timing">
-          Быстрый ответ
-        </h1>
-        <h3 class="card-title">
-          Наш бот, всегда быстро отвечает. Из-за платного хостинга :)
-        </h3>
-        <img class="card-image" src="https://media.discordapp.net/attachments/907248028115685466/912688048251215902/6397-teaandbiscuits.png" width="200">
-        <p class="card-description">
-          
-        </p>
-      </div>
-        
-      <div class="card">
-        <h1 class="card-timing">
-          Приходят Пользователи
-        </h1>
-        <h3 class="card-title">
-          Пользователи смотрят объявления и выберают себе сервер. Вот так и приходят к Вам участники.
-      </h3>
-        <img class="card-image" src="https://media.discordapp.net/attachments/907248028115685466/912688701325316096/4975-sakuratsubomi.png" width="200">
-        <p class="card-description">
-        
-        </p>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisting - Discord Bot</title>
+    <meta name="keywords" content="Adverstingbot, Discord Bot">
+    <meta name="description" content="Официальный веб-сайт Adversting Bot!">
+    <meta name="msapplication-TileColor" content="#ec4899">
+    <meta name="theme-color" content="#ec4899">
+    <script src="https://kit.fontawesome.com/ed299f2e38.js" crossorigin="anonymous"
+        type="338978397bf0ecfef5e98d22-text/javascript"></script>
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Adversting Bot">
+    <meta property="og:description" content="Офииальный веб-сайт Adversting Bot">
+    <meta property="og:url" content="url">
+    <meta property="og:image" content="/banner.png">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="1440">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        primary: {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))',
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))',
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(var(--muted))',
+                            foreground: 'hsl(var(--muted-foreground))',
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(var(--accent))',
+                            foreground: 'hsl(var(--accent-foreground))',
+                        },
+                        card: {
+                            DEFAULT: 'hsl(var(--card))',
+                            foreground: 'hsl(var(--card-foreground))',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-foreground">
+    <header
+        class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div class="container mx-auto px-4 flex h-16 items-center justify-between">
+            <a href="/" class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                <span class="font-bold text-xl">Advertisting</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features"
+                    class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+                    Features
+                </a>
+                <a href="#commands"
+                    class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+                    Commands
+                </a>
+                <a href="#pricing"
+                    class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+                    Pricing
+                </a>
+                <a href="#docs" class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+                    Documentation
+                </a>
+                <a href="/pro"
+                    class="px-4 py-2 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:opacity-90 transition-opacity">
+                    AdPro
+                </a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
-      </div>
-    </div>
-    
-    <div class="statics-section">
-      <div class="container">
+    </header>
 
-      <h1 class="statics-title">
-        Наши Награды
-      </h1>
-        <p class="statics-description">
-          
-        </p>
-      <div class="row">
-        
-      <div class="statics-rows">
-        <h2>
-          Пользователей
-        </h2>
-        60.000+ 
-      </div>
-      <div class="statics-rows">
-        <h2>
-         Гильдий
-        </h2>
-        40+
-      </div>
-      <div class="statics-rows">
-        <h2>
-         Время работы
-        </h2>
-        99.8~
-      </div>
-      </div>
-      </div>
+    <div id="mobile-menu" class="mobile-menu fixed inset-0 z-50">
+        <div class="absolute inset-0 bg-background/80 backdrop-blur-sm" id="mobile-menu-backdrop"></div>
+        <div class="absolute right-0 top-0 h-full w-[300px] bg-background shadow-xl">
+            <div class="flex flex-col p-6">
+                <div class="flex items-center justify-between mb-8">
+                    <span class="font-semibold text-lg">Menu</span>
+                    <button id="close-mobile-menu" class="p-2 rounded-md hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                    <a href="#features" class="px-4 py-2 text-lg font-medium hover:bg-gray-100 rounded-md">Features</a>
+                    <a href="#commands" class="px-4 py-2 text-lg font-medium hover:bg-gray-100 rounded-md">Commands</a>
+                    <a href="#pricing" class="px-4 py-2 text-lg font-medium hover:bg-gray-100 rounded-md">Pricing</a>
+                    <a href="#docs" class="px-4 py-2 text-lg font-medium hover:bg-gray-100 rounded-md">Documentation</a>
+                    <a href="/pro"
+                        class="mt-4 px-4 py-2 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium text-center hover:opacity-90 transition-opacity">
+                        AdPro
+                    </a>
+                </nav>
+            </div>
+        </div>
     </div>
-    
-    
-    <div class="s-m-section">
-    <h1 class="s-m-title">
-      🙈
-      </h1>
-      <p class="s-m-descritpion">
-        Мы - желаем Вам удачи и новых пользователей :)
-      </p>
-        <button class="s-m-btn">
-          Пригласить Бота
-        </button>
-        <button class="s-m-btn-2">
-          Связь с Автором
-        </button>
-        <br><br>
-        <a href="https://discord.com/users/вашid" class="s-m-link discord"><svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.51429 0.416748H26.4857C28.4229 0.416748 30 1.98841 30 3.93591V34.5834L26.3143 31.3376L24.24 29.4242L22.0457 27.3913L22.9543 30.5517H3.51429C1.57714 30.5517 0 28.9801 0 27.0326V3.93591C0 1.98841 1.57714 0.416748 3.51429 0.416748ZM18.7371 21.3438C19.2514 21.993 19.8686 22.7276 19.8686 22.7276C23.6571 22.608 25.1143 20.1309 25.1143 20.1309C25.1143 14.6301 22.6457 10.1713 22.6457 10.1713C20.1771 8.32633 17.8286 8.37758 17.8286 8.37758L17.5886 8.65091C20.5029 9.53925 21.8571 10.8205 21.8571 10.8205C20.0743 9.84675 18.3257 9.36841 16.6971 9.1805C15.4629 9.04383 14.28 9.078 13.2343 9.21466C13.1445 9.21466 13.0678 9.22768 12.9813 9.24236C12.9687 9.24449 12.9559 9.24666 12.9429 9.24883C12.3429 9.30008 10.8857 9.52216 9.05143 10.3251C8.41714 10.6155 8.04 10.8205 8.04 10.8205C8.04 10.8205 9.46286 9.47091 12.5486 8.58258L12.3771 8.37758C12.3771 8.37758 10.0286 8.32633 7.56 10.1713C7.56 10.1713 5.09143 14.6301 5.09143 20.1309C5.09143 20.1309 6.53143 22.608 10.32 22.7276C10.32 22.7276 10.9543 21.9588 11.4686 21.3097C9.29143 20.6605 8.46857 19.2938 8.46857 19.2938C8.46857 19.2938 8.64 19.4134 8.94857 19.5842C8.96571 19.6013 8.98286 19.6184 9.01714 19.6355C9.04286 19.6526 9.06857 19.6654 9.09429 19.6782C9.12 19.691 9.14571 19.7038 9.17143 19.7209C9.6 19.9601 10.0286 20.148 10.4229 20.3017C11.1257 20.5751 11.9657 20.8484 12.9429 21.0363C14.2286 21.2755 15.7371 21.3609 17.3829 21.0534C18.1886 20.9167 19.0114 20.6776 19.8686 20.3188C20.4686 20.0967 21.1371 19.7722 21.84 19.3109C21.84 19.3109 20.9829 20.7117 18.7371 21.3438ZM10.1487 16.6458C10.1487 15.6037 10.9201 14.7495 11.8973 14.7495C12.8744 14.7495 13.663 15.6037 13.6458 16.6458C13.6458 17.6878 12.8744 18.542 11.8973 18.542C10.9373 18.542 10.1487 17.6878 10.1487 16.6458ZM16.4058 16.6458C16.4058 15.6037 17.1773 14.7495 18.1544 14.7495C19.1315 14.7495 19.903 15.6037 19.903 16.6458C19.903 17.6878 19.1315 18.542 18.1544 18.542C17.1944 18.542 16.4058 17.6878 16.4058 16.6458Z" fill="white"></path></svg></a>
-        
-    </div>
-    <br>
-    <script src="./script.js" defer></script>
-  </body>
+
+    <main>
+        <section class="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
+            <div class="hero-background"></div>
+            <div class="container mx-auto px-4 relative mobile z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="flex-1 text-center lg:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                            Elevate Your Discord
+                            <span class="gradient-text">Experience</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
+                            Advertisting: Your all-in-one Discord bot for seamless moderation, engaging entertainment,
+                            and community growth.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <button
+                                class="px-6 py-3 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:opacity-90 transition-opacity">
+                                Add to Discord
+                            </button>
+                            <button
+                                class="px-6 py-3 rounded-md border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                                Explore Features
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-1 max-w-xl">
+                        <div class="gradient-border">
+                            <div class="p-4">
+                                <img src="/banner.png" alt="Bot Interface"
+                                    class="w-full h-auto rounded-lg shadow-2xl" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Powerful Features</h2>
+                    <p class="text-muted-foreground max-w-2xl mx-auto">
+                        Discover the advanced capabilities that make Advertisting the ultimate Discord bot for your
+                        server.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-purple-500 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Advanced Moderation</h3>
+                        <p class="text-muted-foreground">Keep your server safe with powerful moderation tools and
+                            customizable auto-mod features.</p>
+                    </div>
+                    <div class="feature-card" style="animation-delay: 0.2s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-500 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Music Streaming</h3>
+                        <p class="text-muted-foreground">Enjoy high-quality music streaming from various sources,
+                            complete with playlist management.</p>
+                    </div>
+                    <div class="feature-card" style="animation-delay: 0.4s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-purple-500 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Custom Commands</h3>
+                        <p class="text-muted-foreground">Create and manage custom commands tailored to your server's
+                            unique needs and culture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commands" class="py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Powerful Commands</h2>
+                    <p class="text-muted-foreground max-w-2xl mx-auto">
+                        Explore Advertisting's extensive list of commands designed to enhance your Discord server
+                        experience.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative mb-8">
+                        <input type="text" id="command-search" placeholder="Search commands..."
+                            class="w-full px-4 py-3 pl-12 rounded-lg bg-background border border-input focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+
+                    <div id="commands-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="py-20 relative overflow-hidden bg-gradient-to-r from-purple-500/10 to-pink-500/10">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Advertisting by the Numbers</h2>
+                    <p class="text-muted-foreground max-w-2xl mx-auto">
+                        See how Advertisting is making a difference across Discord communities worldwide.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="stat-card text-center">
+                        <h3 class="text-4xl font-bold mb-2 gradient-text">1M+</h3>
+                        <p class="text-muted-foreground">Active Users</p>
+                    </div>
+                    <div class="stat-card text-center">
+                        <h3 class="text-4xl font-bold mb-2 gradient-text">50K+</h3>
+                        <p class="text-muted-foreground">Servers</p>
+                    </div>
+                    <div class="stat-card text-center">
+                        <h3 class="text-4xl font-bold mb-2 gradient-text">100M+</h3>
+                        <p class="text-muted-foreground">Commands Executed</p>
+                    </div>
+                    <div class="stat-card text-center">
+                        <h3 class="text-4xl font-bold mb-2 gradient-text">99.9%</h3>
+                        <p class="text-muted-foreground">Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="py-20 relative overflow-hidden cta-section">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Discord Server?</h2>
+                    <p class="text-muted-foreground mb-8">
+                        Join thousands of communities that trust Advertisting to enhance their Discord experience. Get
+                        started for free today!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="px-8 py-3 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:opacity-90 transition-opacity">
+                            Add Advertisting to Discord
+                        </button>
+                        <button
+                            class="px-8 py-3 rounded-md border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                            View Documentation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Advertisting</h3>
+                    <p class="text-gray-600">Your all-in-one Discord bot for moderation, entertainment, and community
+                        growth.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-600 hover:text-gray-900 footer-link">Features</a></li>
+                        <li><a href="#commands" class="text-gray-600 hover:text-gray-900 footer-link">Commands</a></li>
+                        <li><a href="#pricing" class="text-gray-600 hover:text-gray-900 footer-link">Pricing</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Help Center</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Discord Server</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Status</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 footer-link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200">
+                <p class="text-center text-gray-600">
+                    © 2024 Advertisting Bot. All rights reserved.
+                    <span class="block mt-2 text-sm">
+                        Developed with ❤️ by <a href="#"
+                            class="text-purple-600 hover:text-purple-700">lordofsunshine</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
 </html>

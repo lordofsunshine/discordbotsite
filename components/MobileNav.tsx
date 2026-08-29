@@ -67,7 +67,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`site-header${compact && !open ? " is-compact" : ""}${dismissed ? " is-dismissed" : ""}`}
+      className={`site-header${compact && !open ? " is-compact" : ""}${open ? " is-menu-open" : ""}${dismissed ? " is-dismissed" : ""}`}
     >
       {!dismissed && (
         <div className="announcement">

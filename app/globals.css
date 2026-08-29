@@ -65,12 +65,16 @@ svg {
   position: fixed;
   inset: 0 0 auto;
   z-index: var(--z-sticky);
-  transform: translateY(0);
   transition: transform var(--dur-long) var(--ease-out);
 }
 
 .site-header.is-compact:not(.is-dismissed) {
   transform: translateY(calc(var(--banner-height) * -1));
+}
+
+.site-header.is-menu-open {
+  transform: none;
+  transition: none;
 }
 
 .site-header.is-dismissed {
@@ -239,6 +243,9 @@ svg {
 .mobile-menu {
   position: fixed;
   inset: 0;
+  height: 100dvh;
+  min-height: 100svh;
+  overflow: hidden;
   z-index: var(--z-modal);
   pointer-events: none;
   visibility: hidden;
@@ -267,9 +274,15 @@ svg {
   position: absolute;
   inset: 0 0 0 auto;
   width: min(86%, 24rem);
+  height: 100dvh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
-  padding: calc(var(--banner-height) + var(--nav-height) + var(--space-xl)) var(--space-lg) var(--space-xl);
+  padding-block-start: calc(var(--banner-height) + var(--nav-height) + var(--space-xl));
+  padding-inline: max(var(--space-lg), env(safe-area-inset-left));
+  padding-block-end: max(var(--space-xl), env(safe-area-inset-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--color-accent);
   border-left: var(--rule-bold) solid var(--color-ink);
   transform: translateX(100%);
